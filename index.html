@@ -9,6 +9,17 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="./static/css/reset.css">
     <title>EPI</title>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>y</title>
+    <script>
+      (function () {
+        let desW = 750,
+          winW = document.documentElement.clientWidth,
+          ratio = winW/desW;
+        document.documentElement.style.fontSize = ratio *100 + 'px';
+      })();
+    </script>
   </head>
   <body>
     <div id="app"></div>

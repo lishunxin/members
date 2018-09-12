@@ -45,7 +45,7 @@
               <h5>软件部：
                 <span>软件部内设人工智能，后端，c++，前端，linux运维等学习小组。</span>
               </h5>
-              <div class="chart">点此填写软件报名表</div>
+              <div class="chart" @click="ruan">点此填写软件报名表</div>
               <div>
                 <p></p>
                 <img src="./img/ruan.jpg" class="img"/>
@@ -53,7 +53,7 @@
               <h5>硬件部：
                 <span>硬件部内设无人机，电源/信号，FPGA，单片机， 智能小车等学习小组。</span>
               </h5>
-              <div class="chart">点此填写硬件报名表</div>
+              <div class="chart" @click="ying">点此填写硬件报名表</div>
               <div>
                 <p></p>
                 <img src="./img/ying.jpg" class="img"/>
@@ -100,6 +100,14 @@ export default {
       that.$refs.p.style.color = color
     }, 100)
   },
+  methods: {
+    ruan: function () {
+      this.$router.push({path: '/login'})
+    },
+    ying: function () {
+      this.$router.push({path: '/login2'})
+    }
+  },
   components: {
     swiper,
     swiperSlide
@@ -109,6 +117,8 @@ export default {
 
 <style type="text/css" scoped>
   .introduce{
+    width:7.5rem;
+    background: url(./star.gif) no-repeat;
     height: 13.5rem;
   }
   .shake {

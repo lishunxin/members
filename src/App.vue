@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -18,8 +18,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
-  width:7.5rem;
-  background: url(components/star.gif) no-repeat;
-  height: 13.5rem;
 }
 </style>
